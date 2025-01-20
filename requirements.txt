@@ -1,0 +1,6 @@
+Pandas==1.3.3
+NumPy==1.21.2
+TensorFlow==2.6.0
+Keras==2.6.0
+forecast
+Tidyverse
