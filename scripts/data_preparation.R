@@ -2,6 +2,7 @@
 library(tidyverse)
 
 # Function to load raw stock market data
+file path = "E:/code/Local projects/Data Science Projects(R and Python)/Stock Market Prediction with Time-Series Analysis/data/raw/stockdata.csv"
 load_data <- function(file_path) {
   data <- read_csv(file_path)
   return(data)
@@ -21,7 +22,3 @@ save_processed_data <- function(data, output_path) {
   write_csv(data, output_path)
 }
 
-# Example usage
-# raw_data <- load_data("data/raw/stock_data.csv")
-# cleaned_data <- clean_data(raw_data)
-# save_processed_data(cleaned_data, "data/processed/cleaned_stock_data.csv")

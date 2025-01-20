@@ -34,13 +34,3 @@ predict_prophet <- function(model, future) {
   forecasted_values <- predict(model, future)
   return(forecasted_values)
 }
-
-# Example usage
-# data <- load_data("data/raw/stock_data.csv")
-# ts_data <- ts(data$Close, frequency = 252) # Assuming daily data
-# arima_model <- fit_arima(ts_data)
-# arima_forecast <- predict_arima(arima_model, h = 30) # Forecasting next 30 days
-
-# prophet_model <- fit_prophet(data)
-# future <- make_future_dataframe(prophet_model, periods = 30)
-# prophet_forecast <- predict_prophet(prophet_model, future)
